@@ -1,7 +1,46 @@
+/* Fonts */
+
+@font-face {
+  font-family: "outfit";
+  src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+
+/* Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+} 
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+} 
 
 
 
+/* Root */
 
+:root {
+  --clr-Soft-blue: hsl(215, 51%, 70%);
+  --clr-Cyan: hsl(178, 100%, 50%);
+  --clr-Very-dark-blue-main: hsl(217, 54%, 11%);
+  --clr-Very-dark-blue-card: hsl(216, 50%, 16%);
+  --clr-Very-dark-blue-line: hsl(215, 32%, 27%);
+
+  --main-font-size: 18px;
+  
+ }
 
 
 .attribution { 
