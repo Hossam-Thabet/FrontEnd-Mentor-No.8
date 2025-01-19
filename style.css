@@ -79,6 +79,7 @@ img, picture, video, canvas, svg {
   inset:0;
   background-color: var(--clr-Cyan);
   opacity: 0;
+  transition: 0.4s;
 }
 
 .card__img-container:hover > .card-img-hover {
@@ -91,25 +92,30 @@ img, picture, video, canvas, svg {
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
   opacity: 0;
+  transition: 0.4s;
+  cursor: url(images/icons8-hand-cursor-32.png) , auto ;
 }
 
- .card__img-container:hover > .card-img-hover + img {
+.card__img-container:hover > .card-img-hover + img {
   opacity:1;
- }
+}
 
 .flex-items {
   display:flex;
   align-items: center;
 }
 
+.card__title {
+  margin-top: 1rem;
+}
+
 .card__title a {
   color: white;
-  margin-top: 1rem;
   font-size: 22px;
   font-weight: 600;
   text-decoration: none;
+  transition: 0.4s;
   cursor: url(images/icons8-hand-cursor-32.png) , auto ;
 }
 
@@ -126,7 +132,7 @@ img, picture, video, canvas, svg {
 
 @media (max-width:375px) {
   .card__description {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
